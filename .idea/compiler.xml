@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mall-eureka" />
+        <module name="mall-service-file" />
         <module name="mall-common" />
         <module name="mall-common-db" />
         <module name="mall-service-goods-api" />
@@ -21,6 +22,7 @@
       <module name="mall-parent" target="1.8" />
       <module name="mall-service" target="1.8" />
       <module name="mall-service-api" target="1.8" />
+      <module name="mall-service-file" target="1.8" />
       <module name="mall-service-goods" target="1.8" />
       <module name="mall-service-goods-api" target="1.8" />
       <module name="mall-web" target="1.8" />
@@ -32,6 +34,7 @@
       <module name="mall-common-db" options="-parameters" />
       <module name="mall-eureka" options="-parameters" />
       <module name="mall-service" options="-parameters" />
+      <module name="mall-service-file" options="-parameters" />
       <module name="mall-service-goods" options="-parameters" />
       <module name="mall-service-goods-api" options="-parameters" />
     </option>

@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 /****
  * @Author:admin
- * @Description:Category构建
+ * @Description:商品分类
  * @Date 2019/6/14 19:13
  *****/
 @ApiModel(description = "Category",value = "Category")

@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/mall-parent/mall-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall-parent/mall-eureka/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall-parent/mall-service-api/mall-service-goods-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mall-parent/mall-service/mall-service-file/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall-parent/mall-service/mall-service-goods/src/main/java" charset="UTF-8" />
   </component>
 </project>

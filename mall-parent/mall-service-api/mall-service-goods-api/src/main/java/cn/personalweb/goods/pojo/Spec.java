@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 /****
  * @Author:admin
- * @Description:Spec构建
+ * @Description:规格管理，一个模板对应多个规格：规格是例如颜色、手机运行内存等信息
  * @Date 2019/6/14 19:13
  *****/
 @ApiModel(description = "Spec",value = "Spec")
