@@ -1,0 +1,27 @@
+
+Ÿ
+java:S1130V"‰Remove the declaration of thrown exception 'org.apache.http.client.ClientProtocolException' which is a subclass of 'java.io.IOException'.(ä†ÇH
+J
+java:S2864Z"4Iterate over the "entrySet" instead of the "keySet".(÷¤Äò
+]
+java:S2259™"FA "NullPointerException" could be thrown; "response" is nullable here.(Âì“¡
+o
+java:S2293F"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÖëÒ×
+Y
+java:S2583["CChange this condition so that it does not always evaluate to "true"(ß‰´œ
+J
+java:S2864n"4Iterate over the "entrySet" instead of the "keySet".(÷¤Äò
+ƒ
+java:S1130¦"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(½Ã–Ô
+o
+java:S2293m"YReplace the type specification in this constructor call with the diamond operator ("<>").(êø²
+_
+java:S2259"HA "NullPointerException" could be thrown; "httpClient" is nullable here.(—¢¯µ
+¥
+java:S1130J"‰Remove the declaration of thrown exception 'org.apache.http.client.ClientProtocolException' which is a subclass of 'java.io.IOException'.(¬¼ú„úÿÿÿÿ
+R
+java:S1117X"7Rename "url" which hides the field declared at line 32.( ±Ï›ıÿÿÿÿ
+ 
+java:S1130x"‰Remove the declaration of thrown exception 'org.apache.http.client.ClientProtocolException' which is a subclass of 'java.io.IOException'.(˜¦äÏ
+ 
+java:S1130P"‰Remove the declaration of thrown exception 'org.apache.http.client.ClientProtocolException' which is a subclass of 'java.io.IOException'.(ñğË™

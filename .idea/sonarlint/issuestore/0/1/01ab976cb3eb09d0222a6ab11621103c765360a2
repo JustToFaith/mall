@@ -1,0 +1,18 @@
+
+S
+java:S1197;"8Move the array designator from the variable to the type.(¡şÏÖøÿÿÿÿ
+A
+java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü
+N	java:S106<"9Replace this use of System.out or System.err by a logger.(ãÕ¹½
+N	java:S106>"9Replace this use of System.out or System.err by a logger.(’ÔĞ¨
+:
+java:S1659"$Declare "lowPos" on a separate line.(íÒÀâ
+<
+java:S2129"!Remove this "Integer" constructor(Ú¼Œšşÿÿÿÿ
+7
+java:S1643)"Use a StringBuilder instead.(‰Ñ…Šüÿÿÿÿ
+<
+java:S2129"!Remove this "Integer" constructor(ÑÂ‰âùÿÿÿÿ
+N	java:S106="9Replace this use of System.out or System.err by a logger.(œèúĞ
+7
+java:S16435"Use a StringBuilder instead.(ü¹ˆ²şÿÿÿÿ
