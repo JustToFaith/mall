@@ -31,4 +31,5 @@ public class Goods implements Serializable {
     public void setSkuList(List<Sku> skuList) {
         this.skuList = skuList;
     }
+
 }

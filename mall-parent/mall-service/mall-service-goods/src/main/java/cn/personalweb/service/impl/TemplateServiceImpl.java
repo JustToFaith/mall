@@ -1,7 +1,10 @@
 package cn.personalweb.service.impl;
 
+import cn.personalweb.dao.CategoryMapper;
 import cn.personalweb.dao.TemplateMapper;
+import cn.personalweb.goods.pojo.Category;
 import cn.personalweb.goods.pojo.Template;
+import cn.personalweb.service.CategoryService;
 import cn.personalweb.service.TemplateService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -16,6 +19,9 @@ public class TemplateServiceImpl implements TemplateService {
 
     @Autowired
     private TemplateMapper templateMapper;
+
+    @Autowired
+    private CategoryMapper categoryMapper;
 
     /**
      * Template条件+分页查询
@@ -135,5 +141,12 @@ public class TemplateServiceImpl implements TemplateService {
     @Override
     public List<Template> findAll() {
         return templateMapper.selectAll();
+    }
+
+    @Override
+    public Template findByCategoryId(Integer id) {
+        Category category = categoryMapper.selectByPrimaryKey(id);
+        Template template = templateMapper.selectByPrimaryKey(category.getTemplateId());
+        return template;
     }
 }

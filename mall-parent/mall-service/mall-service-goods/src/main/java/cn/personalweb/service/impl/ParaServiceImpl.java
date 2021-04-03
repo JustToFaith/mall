@@ -1,7 +1,9 @@
 package cn.personalweb.service.impl;
 
+import cn.personalweb.dao.CategoryMapper;
 import cn.personalweb.dao.ParaMapper;
 import cn.personalweb.dao.TemplateMapper;
+import cn.personalweb.goods.pojo.Category;
 import cn.personalweb.goods.pojo.Para;
 import cn.personalweb.goods.pojo.Template;
 import cn.personalweb.service.ParaService;
@@ -21,6 +23,9 @@ public class ParaServiceImpl implements ParaService {
 
     @Autowired
     private TemplateMapper templateMapper;
+
+    @Autowired
+    private CategoryMapper categoryMapper;
 
     /**
      * Para条件+分页查询
@@ -152,6 +157,19 @@ public class ParaServiceImpl implements ParaService {
     @Override
     public List<Para> findAll() {
         return paraMapper.selectAll();
+    }
+
+    /***
+     * 根据分类ID查询参数列表
+     * @param id
+     * @return
+     */
+    @Override
+    public List<Para> findByCategoryId(Integer id) {
+        Category category = categoryMapper.selectByPrimaryKey(id);
+        Para para = new Para();
+        para.setTemplateId(category.getTemplateId());
+        return paraMapper.select(para);
     }
 
     /**

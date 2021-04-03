@@ -75,4 +75,10 @@ public class BrandController {
         PageInfo<Brand> pageInfo = brandService.findPage(brand, page, size);
         return new Result<PageInfo<Brand>>(true, StatusCode.OK, "分页查询成功", pageInfo);
     }
+
+    @GetMapping(value = "/category/{id}")
+    public Result<List<Brand>> findBrandByCategory(@PathVariable(value = "id") Integer categoryId) {
+        List<Brand> brands = brandService.findByCategory(categoryId);
+        return new Result<List<Brand>>(true, StatusCode.OK, "查询成功", brands);
+    }
 }

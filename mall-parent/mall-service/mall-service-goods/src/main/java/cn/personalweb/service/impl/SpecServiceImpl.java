@@ -1,7 +1,9 @@
 package cn.personalweb.service.impl;
 
+import cn.personalweb.dao.CategoryMapper;
 import cn.personalweb.dao.SpecMapper;
 import cn.personalweb.dao.TemplateMapper;
+import cn.personalweb.goods.pojo.Category;
 import cn.personalweb.goods.pojo.Spec;
 import cn.personalweb.goods.pojo.Template;
 import cn.personalweb.service.SpecService;
@@ -21,6 +23,9 @@ public class SpecServiceImpl implements SpecService {
 
     @Autowired
     private TemplateMapper templateMapper;
+
+    @Autowired
+    private CategoryMapper categoryMapper;
 
     /**
      * Spec条件+分页查询
@@ -152,6 +157,20 @@ public class SpecServiceImpl implements SpecService {
     @Override
     public List<Spec> findAll() {
         return specMapper.selectAll();
+    }
+
+    /***
+     * 根据分类ID查询规格列表
+     * @param categoryid
+     * @return
+     */
+    @Override
+    public List<Spec> findByCategoryId(Integer categoryid) {
+        Category category = categoryMapper.selectByPrimaryKey(categoryid);
+        Spec spec = new Spec();
+        spec.setTemplateId(category.getTemplateId());
+        List<Spec> specs = specMapper.select(spec);
+        return specs;
     }
 
 

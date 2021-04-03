@@ -5,6 +5,7 @@ import cn.personalweb.service.TemplateService;
 import com.github.pagehelper.PageInfo;
 import entry.Result;
 import entry.StatusCode;
+import io.swagger.models.auth.In;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -112,5 +113,15 @@ public class TemplateController {
     public Result<Template> findAll(){
         List<Template> list = templateService.findAll();
         return new Result<Template>(true, StatusCode.OK,"查询成功",list) ;
+    }
+
+    /***
+     * 根据分类查询模板数据
+     * @param categoryId:分类ID
+     */
+    @GetMapping(value = "/category/{id}")
+    public Result<Template> findByCategoryId(@PathVariable(value = "id") Integer categoryId) {
+        Template template = templateService.findByCategoryId(categoryId);
+        return new Result<Template>(true, StatusCode.OK, "查询成功", template);
     }
 }

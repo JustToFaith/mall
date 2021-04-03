@@ -45,4 +45,11 @@ public interface BrandService {
      * @return
      */
     PageInfo<Brand> findPage(Brand brand, Integer page, Integer size);
+
+    /**
+     * 根据分类id查询品牌集合
+     * @param cateforyId
+     * @return
+     */
+    List<Brand> findByCategory(Integer cateforyId);
 }
