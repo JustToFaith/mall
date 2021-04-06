@@ -1,0 +1,13 @@
+
+{
+java:S22936"YReplace the type specification in this constructor call with the diamond operator ("<>").(¥ü³³ıÿÿÿÿ8èØ¯´‰/
+q
+java:S3252$"OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".(‹‹¥®úÿÿÿÿ8ñ°´‰/
+e
+java:S1128"CRemove this unused import 'cn.personalweb.service.CategoryService'.(şµøÿùÿÿÿÿ8ÆªÃ½‰/
+q
+java:S32524"OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".(‹‹¥®úÿÿÿÿ8ñ°´‰/
+{
+java:S2293("YReplace the type specification in this constructor call with the diamond operator ("<>").(¬µÄóüÿÿÿÿ8èØ¯´‰/
+ƒ
+java:S1488•"`Immediately return this expression instead of assigning it to the temporary variable "template".(ç†àøÿÿÿÿ8£²Ë½‰/

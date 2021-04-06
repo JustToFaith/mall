@@ -17,6 +17,9 @@
     <modules>
         <module>mall-service-goods</module>
         <module>mall-service-file</module>
+        <module>mall-service-canal</module>
+        <module>mall-service-content</module>
+        <module>mall-service-search</module>
     </modules>
 
     <!--依赖-->

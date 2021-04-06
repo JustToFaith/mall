@@ -1,141 +1,141 @@
 
-b
-java:S1192²"FDefine a constant instead of duplicating this literal "UTF-8" 3 times.(‚şÿéüÿÿÿÿ
-\
-java:S1124Ş"EReorder the modifiers to comply with the Java Language Specification.(Åşõ·
-T
-java:S1197"8Move the array designator from the variable to the type.(Ó¡«õüÿÿÿÿ
-O
-java:S1197É"8Move the array designator from the variable to the type.(«÷×
-v
-java:S1149Ú"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‡•î
-l	java:S117ô"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ³°€øÿÿÿÿ
-O
-java:S1197Ø"8Move the array designator from the variable to the type.(¬Ì’
-i	java:S100†"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’¨ÿÉûÿÿÿÿ
-\
-java:S1124Ø"EReorder the modifiers to comply with the Java Language Specification.(¬Ì’
-l	java:S117—"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ş¼Š‘ùÿÿÿÿ
+L
+java:S1197"8Move the array designator from the variable to the type.(½Ë¦Œ
+Y
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Åşõ·
+L
+java:S1197"8Move the array designator from the variable to the type.(«÷×
+s
+java:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‡•î
+i	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûÜúôÿÿÿÿÿ
+Q
+java:S1197"8Move the array designator from the variable to the type.(Ó¡«õüÿÿÿÿ
 <
-java:S1659Š" Declare "c2" on a separate line.(Şİ¸üÿÿÿÿ
-<
-java:S1659Â" Declare "c2" on a separate line.(ÀßçÖùÿÿÿÿ
-O
-java:S1197¬"8Move the array designator from the variable to the type.(«÷×
-O
-java:S1197Æ"8Move the array designator from the variable to the type.(“•á€
-N
-java:S1197R"8Move the array designator from the variable to the type.(Şú¾—
-N
-java:S1197ê"8Move the array designator from the variable to the type.(“¨í(
-O
-java:S1197ë"8Move the array designator from the variable to the type.(ë»Âµ
+java:S1905"(Remove this unnecessary cast to "int[]".(‚·é
+`	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“¨í(
+L
+java:S1197"8Move the array designator from the variable to the type.(½Ë¦Œ
+Q
+java:S1197"8Move the array designator from the variable to the type.(«¿±”ÿÿÿÿÿ
+L
+java:S1197"8Move the array designator from the variable to the type.(“•á€
+s
+java:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‡•î
+3
+java:S1659"Declare "n" on a separate line.(¹È’¡
+K
+java:S1197"8Move the array designator from the variable to the type.(¨Å¥i
+_	java:S116"LRename this field "S" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…â•¦
 6
-java:S1659ì"Declare "i" on a separate line.(šÖıÿ
-9
-java:S1659À""Declare "slen" on a separate line.(†Î¡Ã
-?
-java:S1905¡"(Remove this unnecessary cast to "int[]".(‚·é
-:
-java:S1659˜"#Declare "saltb" on a separate line.(½Ë¦Œ
-=
-java:S1659š"!Declare "off" on a separate line.(š¾ŒÄøÿÿÿÿ
-?
-java:S1905¢"(Remove this unnecessary cast to "int[]".(û¯²
-i	java:S100 "NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²êıÖÿÿÿÿÿ
-N
-java:S1197ê"8Move the array designator from the variable to the type.(“¨í(
-O
-java:S1197˜"8Move the array designator from the variable to the type.(½Ë¦Œ
-D
-java:S1905»"(Remove this unnecessary cast to "int[]".(›ÑÛÇıÿÿÿÿ
-P
-java:S4719"9Replace charset name argument with StandardCharsets.UTF_8(Óœé—
-a
-java:S1124è"EReorder the modifiers to comply with the Java Language Specification.(¬ùÿĞşÿÿÿÿ
-O
-java:S1197ú"8Move the array designator from the variable to the type.(…â•¦
-b	java:S116ú"LRename this field "S" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…â•¦
+java:S1659""Declare "olen" on a separate line.(†Î¡Ã
+L
+java:S1197"8Move the array designator from the variable to the type.(›Ï¡«
+L
+java:S1197"8Move the array designator from the variable to the type.(¯ÚİÎ
+q	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(ú²õ«üÿÿÿÿ
+i	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ş¼Š‘ùÿÿÿÿ
+L
+java:S1197"8Move the array designator from the variable to the type.(Şú¾—
+Q
+java:S1197"8Move the array designator from the variable to the type.(øàü÷şÿÿÿÿ
 ;
-java:S1659Â"Declare "o" on a separate line.(ÀßçÖùÿÿÿÿ
-6
-java:S1659ò"Declare "r" on a separate line.(¹È’¡
-9
-java:S1659À""Declare "olen" on a separate line.(†Î¡Ã
-T
-java:S1197«"8Move the array designator from the variable to the type.(å’Üÿÿÿÿÿ
+java:S1659""Declare "slen" on a separate line.(‹ŒÎşÿÿÿÿ
+s
+java:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‡•î
+L
+java:S1197"8Move the array designator from the variable to the type.(›Ï¡«
+L
+java:S1197"8Move the array designator from the variable to the type.(ë»Âµ
+L
+java:S1197"8Move the array designator from the variable to the type.(…â•¦
 :
-java:S1659È"#Declare "doffp" on a separate line.(›Ï¡«
-O
-java:S1197È"8Move the array designator from the variable to the type.(›Ï¡«
-f	java:S117ê"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“¨í(
-O
-java:S1197˜"8Move the array designator from the variable to the type.(½Ë¦Œ
+java:S1659"!Declare "off" on a separate line.(š¾ŒÄøÿÿÿÿ
+R
+java:S4719"9Replace charset name argument with StandardCharsets.UTF_8(‚şÿéüÿÿÿÿ
+M
+java:S4719"9Replace charset name argument with StandardCharsets.UTF_8(Óœé—
+Q
+java:S1197"8Move the array designator from the variable to the type.(å’Üÿÿÿÿÿ
+_	java:S116"LRename this field "P" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º²ıâ
+c	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“¨í(
 ;
-java:S1659˜"$Declare "hashed" on a separate line.(½Ë¦Œ
-U
-java:S4719²"9Replace charset name argument with StandardCharsets.UTF_8(‚şÿéüÿÿÿÿ
-t	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(ÅöÖûÿÿÿÿ
-T
-java:S1197Š"8Move the array designator from the variable to the type.(«£‡•ùÿÿÿÿ
-O
-java:S1197˜"8Move the array designator from the variable to the type.(½Ë¦Œ
+java:S1659""Declare "slen" on a separate line.(‹ŒÎşÿÿÿÿ
+8
+java:S1659"$Declare "hashed" on a separate line.(½Ë¦Œ
+f	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²êıÖÿÿÿÿÿ
+Q
+java:S1197"8Move the array designator from the variable to the type.(Ó¡«õüÿÿÿÿ
+3
+java:S1659"Declare "r" on a separate line.(¹È’¡
+9
+java:S1659" Declare "c4" on a separate line.(ÀßçÖùÿÿÿÿ
+f	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼Ô©”üÿÿÿÿ
+d	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê ß
+3
+java:S1659"Declare "i" on a separate line.(šÖıÿ
+Y
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¬Ì’
+7
+java:S1659"#Declare "saltb" on a separate line.(½Ë¦Œ
+L
+java:S1197"8Move the array designator from the variable to the type.(‚Ï¿„
+i	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ ±ºıÿÿÿÿ
+L
+java:S1197"8Move the array designator from the variable to the type.(Åşõ·
+8
+java:S1659"Declare "o" on a separate line.(ÀßçÖùÿÿÿÿ
+K
+java:S1197"8Move the array designator from the variable to the type.(“¨í(
+d	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚Ï¿„
+i	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ³°€øÿÿÿÿ
+9
+java:S1659" Declare "c3" on a separate line.(ÀßçÖùÿÿÿÿ
+L
+java:S1197"8Move the array designator from the variable to the type.(«÷×
+L
+java:S1197"8Move the array designator from the variable to the type.(½Ë¦Œ
+R
+java:S4719"9Replace charset name argument with StandardCharsets.UTF_8(†è‚™ùÿÿÿÿ
+Q
+java:S1197"8Move the array designator from the variable to the type.(ÆÇŠÑùÿÿÿÿ
+q	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(ÅöÖûÿÿÿÿ
+s
+java:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‡•î
+L
+java:S1197"8Move the array designator from the variable to the type.(¬Ì’
+Q
+java:S1197"8Move the array designator from the variable to the type.(¬ùÿĞşÿÿÿÿ
+i	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«£‡•ùÿÿÿÿ
+f	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’¨ÿÉûÿÿÿÿ
+L
+java:S1197"8Move the array designator from the variable to the type.(º²ıâ
+_
+java:S1192"FDefine a constant instead of duplicating this literal "UTF-8" 3 times.(‚şÿéüÿÿÿÿ
+9
+java:S1659" Declare "c2" on a separate line.(Şİ¸üÿÿÿÿ
+^
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¬ùÿĞşÿÿÿÿ
+K
+java:S1197"8Move the array designator from the variable to the type.(“¨í(
+A
+java:S1905"(Remove this unnecessary cast to "int[]".(›ÑÛÇıÿÿÿÿ
 6
-java:S1659ò"Declare "n" on a separate line.(¹È’¡
-T
-java:S1197†"8Move the array designator from the variable to the type.(’¨ÿÉûÿÿÿÿ
-T
-java:S1197Á"8Move the array designator from the variable to the type.(øàü÷şÿÿÿÿ
-c	java:S100ê"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“¨í(
-N
-java:S1197K"8Move the array designator from the variable to the type.(¯ÚİÎ
-g	java:S117‹"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚Ï¿„
-v
-java:S1149‰"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‡•î
-O
-java:S1197Æ"8Move the array designator from the variable to the type.(“•á€
-T
-java:S1197"8Move the array designator from the variable to the type.(Ó¡«õüÿÿÿÿ
-N
-java:S1197ñ"8Move the array designator from the variable to the type.(¨Å¥i
-O
-java:S1197‹"8Move the array designator from the variable to the type.(‚Ï¿„
-l	java:S117Ù"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûÜúôÿÿÿÿÿ
-6
-java:S1659ì"Declare "j" on a separate line.(šÖıÿ
-T
-java:S1197Û"8Move the array designator from the variable to the type.(«¿±”ÿÿÿÿÿ
-b	java:S116ù"LRename this field "P" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º²ıâ
-O
-java:S1197È"8Move the array designator from the variable to the type.(›Ï¡«
-v
-java:S1149›"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‡•î
-l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ ±ºıÿÿÿÿ
-O
-java:S1197ù"8Move the array designator from the variable to the type.(º²ıâ
+java:S1659""Declare "slen" on a separate line.(†Î¡Ã
+Q
+java:S1197"8Move the array designator from the variable to the type.(«£‡•ùÿÿÿÿ
+3
+java:S1659"Declare "j" on a separate line.(šÖıÿ
+Q
+java:S1197"8Move the array designator from the variable to the type.(øàü÷şÿÿÿÿ
 <
-java:S1659Â" Declare "c3" on a separate line.(ÀßçÖùÿÿÿÿ
-O
-java:S1197Ş"8Move the array designator from the variable to the type.(Åşõ·
-g	java:S117–"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê ß
-i	java:S100½"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼Ô©”üÿÿÿÿ
-6
-java:S1659ò"Declare "l" on a separate line.(¹È’¡
-T
-java:S1197©"8Move the array designator from the variable to the type.(ÆÇŠÑùÿÿÿÿ
-T
-java:S1197è"8Move the array designator from the variable to the type.(¬ùÿĞşÿÿÿÿ
->
-java:S1659­""Declare "slen" on a separate line.(‹ŒÎşÿÿÿÿ
-U
-java:S4719"9Replace charset name argument with StandardCharsets.UTF_8(†è‚™ùÿÿÿÿ
-v
-java:S1149¿"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‡•î
-<
-java:S1659Â" Declare "c4" on a separate line.(ÀßçÖùÿÿÿÿ
-l	java:S117Š"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«£‡•ùÿÿÿÿ
->
-java:S1659Ê""Declare "slen" on a separate line.(‹ŒÎşÿÿÿÿ
-t	java:S135Ç"YReduce the total number of break and continue statements in this loop to use at most one.(ú²õ«üÿÿÿÿ
-T
-java:S1197î"8Move the array designator from the variable to the type.(øàü÷şÿÿÿÿ
+java:S1905"(Remove this unnecessary cast to "int[]".(û¯²
+9
+java:S1659" Declare "c2" on a separate line.(ÀßçÖùÿÿÿÿ
+3
+java:S1659"Declare "l" on a separate line.(¹È’¡
+Q
+java:S1197"8Move the array designator from the variable to the type.(’¨ÿÉûÿÿÿÿ
+7
+java:S1659"#Declare "doffp" on a separate line.(›Ï¡«
+L
+java:S1197"8Move the array designator from the variable to the type.(“•á€

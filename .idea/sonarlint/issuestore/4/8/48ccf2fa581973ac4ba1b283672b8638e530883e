@@ -1,0 +1,33 @@
+
+\	java:S112Ì"FDefine and throw a dedicated exception instead of using a generic one.(‹çşè
+W	java:S125Ÿ"<This block of commented-out lines of code should be removed.(Á¢Îúÿÿÿÿ
+P
+java:S2864£"4Iterate over the "entrySet" instead of the "keySet".(½Ö²’ûÿÿÿÿ
+a	java:S112Ï"FDefine and throw a dedicated exception instead of using a generic one.(ÈÕÀ’ÿÿÿÿÿ
+j
+java:S32527"OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".(‹‹¥®úÿÿÿÿ
+a	java:S112ù"FDefine and throw a dedicated exception instead of using a generic one.(á¼­òùÿÿÿÿ
+j
+java:S3252H"OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".(‹‹¥®úÿÿÿÿ
+:
+java:S1643¼"Use a StringBuilder instead.(’’ôß8Şëı¾‰/
+b	java:S112Û"FDefine and throw a dedicated exception instead of using a generic one.(²¥¾,8ûÄ¡À‰/
+h
+java:S3776b"RRefactor this method to reduce its Cognitive Complexity from 45 to the 15 allowed.(²ìŠ€
+a	java:S112×"FDefine and throw a dedicated exception instead of using a generic one.(Áš‹¢ıÿÿÿÿ
+_
+java:S1192e"IDefine a constant instead of duplicating this literal "isDelete" 4 times.(¶Î®
+a	java:S112è"FDefine and throw a dedicated exception instead of using a generic one.(‘şØûüÿÿÿÿ
+t
+java:S2293J"YReplace the type specification in this constructor call with the diamond operator ("<>").(‚Ñûÿÿÿÿ
+\	java:S112õ"FDefine and throw a dedicated exception instead of using a generic one.(‹çşè
+8
+java:S1643¥"Use a StringBuilder instead.(¥´‹±ÿÿÿÿÿ
+\	java:S112…"FDefine and throw a dedicated exception instead of using a generic one.(‹çşè
+R	java:S125"<This block of commented-out lines of code should be removed.(ÛïÙÔ
+g
+java:S1192Ì"PDefine a constant instead of duplicating this literal "å•†å“ä¸å­˜åœ¨" 3 times.(‹çşè
+h	java:S112Ş"FDefine and throw a dedicated exception instead of using a generic one.(Ò¿§ıÿÿÿÿ8÷»¤À‰/
+t
+java:S2293;"YReplace the type specification in this constructor call with the diamond operator ("<>").(Æ¾Ğûÿÿÿÿ
+a	java:S112ä"FDefine and throw a dedicated exception instead of using a generic one.(Áš‹¢ıÿÿÿÿ

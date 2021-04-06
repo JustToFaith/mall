@@ -1,0 +1,11 @@
+
+t
+java:S2293""YReplace the type specification in this constructor call with the diamond operator ("<>").(è÷ÙÆüÿÿÿÿ
+j
+java:S3252."OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".(‹‹¥®úÿÿÿÿ
+j
+java:S3252"OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".(‹‹¥®úÿÿÿÿ
+t
+java:S22930"YReplace the type specification in this constructor call with the diamond operator ("<>").(ãó¡Šüÿÿÿÿ
+h
+java:S3776F"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ã€þ”

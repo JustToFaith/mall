@@ -93,7 +93,7 @@ public class SkuController {
      * @return
      */
     @PostMapping
-    public Result add(@RequestBody   Sku sku){
+    public Result add(@RequestBody Sku sku){
         //调用SkuService实现添加Sku
         skuService.add(sku);
         return new Result(true,StatusCode.OK,"添加成功");
@@ -120,5 +120,16 @@ public class SkuController {
         //调用SkuService实现查询所有Sku
         List<Sku> list = skuService.findAll();
         return new Result<List<Sku>>(true, StatusCode.OK,"查询成功",list) ;
+    }
+
+    /***
+     * 根据审核状态查询Sku
+     * @param status
+     * @return
+     */
+    @GetMapping("/status/{status}")
+    public Result<List<Sku>> findByStatus(@PathVariable String status){
+        List<Sku> list = skuService.findByStatus(status);
+        return new Result<List<Sku>>(true,StatusCode.OK,"查询成功",list);
     }
 }

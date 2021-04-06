@@ -10,10 +10,19 @@
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-parent.iml" filepath="$PROJECT_DIR$/mall-parent/mall-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-service/mall-service.iml" filepath="$PROJECT_DIR$/mall-parent/mall-service/mall-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-service-api/mall-service-api.iml" filepath="$PROJECT_DIR$/mall-parent/mall-service-api/mall-service-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-service/mall-service-canal/mall-service-canal.iml" filepath="$PROJECT_DIR$/mall-parent/mall-service/mall-service-canal/mall-service-canal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-service/mall-service-content/mall-service-content.iml" filepath="$PROJECT_DIR$/mall-parent/mall-service/mall-service-content/mall-service-content.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-service-api/mall-service-content-api/mall-service-content-api.iml" filepath="$PROJECT_DIR$/mall-parent/mall-service-api/mall-service-content-api/mall-service-content-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-service/mall-service-file/mall-service-file.iml" filepath="$PROJECT_DIR$/mall-parent/mall-service/mall-service-file/mall-service-file.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-service/mall-service-goods/mall-service-goods.iml" filepath="$PROJECT_DIR$/mall-parent/mall-service/mall-service-goods/mall-service-goods.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-service-api/mall-service-goods-api/mall-service-goods-api.iml" filepath="$PROJECT_DIR$/mall-parent/mall-service-api/mall-service-goods-api/mall-service-goods-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-service/mall-service-search/mall-service-search.iml" filepath="$PROJECT_DIR$/mall-parent/mall-service/mall-service-search/mall-service-search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-service-api/mall-service-search-api/mall-service-search-api.iml" filepath="$PROJECT_DIR$/mall-parent/mall-service-api/mall-service-search-api/mall-service-search-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-web/mall-web.iml" filepath="$PROJECT_DIR$/mall-parent/mall-web/mall-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-web/mall-web-item/mall-web-item.iml" filepath="$PROJECT_DIR$/mall-parent/mall-web/mall-web-item/mall-web-item.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-service-api/mall-web-item-api/mall-web-item-api.iml" filepath="$PROJECT_DIR$/mall-parent/mall-service-api/mall-web-item-api/mall-web-item-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-web/mall-web-search/mall-web-search.iml" filepath="$PROJECT_DIR$/mall-parent/mall-web/mall-web-search/mall-web-search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-thymeleaf/springboot-thymeleaf.iml" filepath="$PROJECT_DIR$/springboot-thymeleaf/springboot-thymeleaf.iml" />
     </modules>
   </component>
 </project>

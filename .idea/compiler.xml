@@ -6,11 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="mall-web-item-api" />
+        <module name="springboot-thymeleaf" />
+        <module name="mall-service-search" />
+        <module name="mall-service-content-api" />
+        <module name="mall-common" />
+        <module name="mall-service-goods-api" />
+        <module name="mall-web-search" />
+        <module name="mall-service-canal" />
+        <module name="mall-service-content" />
+        <module name="mall-service-search-api" />
+        <module name="mall-web-item" />
         <module name="mall-eureka" />
         <module name="mall-service-file" />
-        <module name="mall-common" />
         <module name="mall-common-db" />
-        <module name="mall-service-goods-api" />
         <module name="mall-service-goods" />
       </profile>
     </annotationProcessing>
@@ -22,10 +31,19 @@
       <module name="mall-parent" target="1.8" />
       <module name="mall-service" target="1.8" />
       <module name="mall-service-api" target="1.8" />
+      <module name="mall-service-canal" target="1.8" />
+      <module name="mall-service-content" target="1.8" />
+      <module name="mall-service-content-api" target="1.8" />
       <module name="mall-service-file" target="1.8" />
       <module name="mall-service-goods" target="1.8" />
       <module name="mall-service-goods-api" target="1.8" />
+      <module name="mall-service-search" target="1.8" />
+      <module name="mall-service-search-api" target="1.8" />
       <module name="mall-web" target="1.8" />
+      <module name="mall-web-item" target="8" />
+      <module name="mall-web-item-api" target="8" />
+      <module name="mall-web-search" target="1.8" />
+      <module name="springboot-thymeleaf" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -34,9 +52,18 @@
       <module name="mall-common-db" options="-parameters" />
       <module name="mall-eureka" options="-parameters" />
       <module name="mall-service" options="-parameters" />
+      <module name="mall-service-canal" options="-parameters" />
+      <module name="mall-service-content" options="-parameters" />
+      <module name="mall-service-content-api" options="-parameters" />
       <module name="mall-service-file" options="-parameters" />
       <module name="mall-service-goods" options="-parameters" />
       <module name="mall-service-goods-api" options="-parameters" />
+      <module name="mall-service-search" options="-parameters" />
+      <module name="mall-service-search-api" options="-parameters" />
+      <module name="mall-web-item" options="-parameters" />
+      <module name="mall-web-item-api" options="-parameters" />
+      <module name="mall-web-search" options="-parameters" />
+      <module name="springboot-thymeleaf" options="-parameters" />
     </option>
   </component>
 </project>

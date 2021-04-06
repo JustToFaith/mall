@@ -22,8 +22,8 @@ public class GoodsApplication {
      * IdWorker
      * @return
      */
-//    @Bean
-//    public IdWorker idWorker(){
-//        return new IdWorker(0, 0);
-//    }
+    @Bean
+    public IdWorker idWorker(){
+        return new IdWorker(0, 0);
+    }
 }

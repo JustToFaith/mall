@@ -13,7 +13,10 @@
     <description>
         所有涉及到web页面渲染的微服务工程
     </description>
-
+    <modules>
+        <module>mall-web-search</module>
+        <module>mall-web-item</module>
+    </modules>
 
 
 </project>

@@ -1,11 +1,13 @@
 
-R
-java:S2589"7Remove this expression which always evaluates to "true"(™éîý8íÌ÷˜‰/
-y
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÜâÚ½úÿÿÿÿ8Œ„²™‰/
-o
-java:S3252"OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".(‹‹¥®úÿÿÿÿ8ìñ‹™‰/
-o
-java:S3252"OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".(‹‹¥®úÿÿÿÿ8°ï«™‰/
-y
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÜâÚ½úÿÿÿÿ8ÿî‘™‰/
+{
+java:S2293j"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÜâÚ½úÿÿÿÿ8¬´ª³‰/
+{
+java:S2293c"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÜâÚ½úÿÿÿÿ8¬´ª³‰/
+T
+java:S2589E"7Remove this expression which always evaluates to "true"(™éîý8¬´ª³‰/
+q
+java:S3252a"OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".(‹‹¥®úÿÿÿÿ8¬´ª³‰/
+q
+java:S3252h"OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".(‹‹¥®úÿÿÿÿ8¬´ª³‰/
+ƒ
+java:S1488o"aImmediately return this expression instead of assigning it to the temporary variable "categorys".(Í±¶Åýÿÿÿÿ8çç˜½‰/

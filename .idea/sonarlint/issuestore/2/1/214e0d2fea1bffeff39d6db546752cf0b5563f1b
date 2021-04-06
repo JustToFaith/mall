@@ -1,0 +1,11 @@
+
+‡
+java:S14889"eImmediately return this expression instead of assigning it to the temporary variable "storageClient".(µóÖüÿÿÿÿ8àÒ‚²‰/
+\
+java:S1118":Add a private constructor to hide the implicit public one.(ß²©°ùÿÿÿÿ8Ö€²‰/
+‡
+java:S1488,"eImmediately return this expression instead of assigning it to the temporary variable "trackerServer".(ï¿Ê½şÿÿÿÿ8àÒ‚²‰/
+D
+java:S1168³"&Return an empty array instead of null.(¥¹ï8Ö€²‰/
+g	java:S112("FDefine and throw a dedicated exception instead of using a generic one.(ãğİáÿÿÿÿÿ8àÒ‚²‰/
+m	java:S117F"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áÊíó8Ö€²‰/
