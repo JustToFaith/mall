@@ -20,6 +20,9 @@
         <module>mall-service-canal</module>
         <module>mall-service-content</module>
         <module>mall-service-search</module>
+        <module>mall-service-user</module>
+        <module>mall-service-order</module>
+        <module>mall-service-pay</module>
     </modules>
 
     <!--依赖-->

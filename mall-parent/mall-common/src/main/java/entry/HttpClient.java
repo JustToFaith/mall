@@ -30,10 +30,22 @@ import java.util.Map;
  */
 public class HttpClient {
     private String url;
+    /**
+     * 参数
+     */
     private Map<String, String> param;
     private int statusCode;
+    /**
+     * 返回的结果
+     */
     private String content;
+    /**
+     * xml参数
+     */
     private String xmlParam;
+    /**
+     * 是不是https
+     */
     private boolean isHttps;
 
     public boolean isHttps() {

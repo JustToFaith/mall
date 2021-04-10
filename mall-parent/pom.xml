@@ -17,6 +17,7 @@
         <module>mall-common</module>
         <module>mall-common-db</module>
         <module>mall-service</module>
+        <module>mall-user-oauth</module>
     </modules>
 
     <parent>
@@ -60,6 +61,13 @@
         <!--
             http://localhost:9011/swagger-ui.html
         -->
+
+        <!--鉴权-->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.9.0</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>

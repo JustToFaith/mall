@@ -25,4 +25,20 @@ public interface SkuFeign {
      */
     @PostMapping(value = "/search")
     public Result<List<Sku>> findList(@RequestBody(required = false) Sku sku);
+
+    /***
+     * 根据ID查询Sku数据
+     * @param id
+     * @return
+     */
+    @GetMapping("/{id}")
+    public Result<Sku> findById(@PathVariable Long id);
+
+    /***
+     * 库存递减
+     * @param username
+     * @return
+     */
+    @PostMapping(value = "/decr/count")
+    Result decrCount(@RequestParam(value = "username") String username);
 }

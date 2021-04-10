@@ -64,4 +64,10 @@ public interface SkuService {
      * 根据状态查询SKU列表
      */
     List<Sku> findByStatus(String status);
+
+    /***
+     * 库存递减
+     * @param username
+     */
+    void decrCount(String username);
 }

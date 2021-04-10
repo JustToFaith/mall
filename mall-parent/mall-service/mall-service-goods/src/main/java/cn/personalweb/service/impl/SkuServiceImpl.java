@@ -1,10 +1,12 @@
 package cn.personalweb.service.impl;
 import cn.personalweb.dao.SkuMapper;
 import cn.personalweb.goods.pojo.Sku;
+import cn.personalweb.order.pojo.OrderItem;
 import cn.personalweb.service.SkuService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import tk.mybatis.mapper.entity.Example;
@@ -15,6 +17,9 @@ public class SkuServiceImpl implements SkuService {
 
     @Autowired
     private SkuMapper skuMapper;
+
+    @Autowired
+    private RedisTemplate redisTemplate;
 
 
     /**
@@ -204,5 +209,24 @@ public class SkuServiceImpl implements SkuService {
 //        List<Sku> skus = skuMapper.select(sku);
         List<Sku> skus = skuMapper.selectAllStatus(sku);
         return skus;
+    }
+
+    /***
+     * 库存递减
+     * @param username
+     */
+    @Override
+    public void decrCount(String username) {
+        //获取购物车数据
+        List<OrderItem> orderItems = redisTemplate.boundHashOps("Cart_" + username).values();
+
+        //循环递减
+        for (OrderItem orderItem : orderItems) {
+            //递减库存
+            int count = skuMapper.decrCount(orderItem);
+            if(count<=0){
+                throw new RuntimeException("库存不足，递减失败！");
+            }
+        }
     }
 }

@@ -7,20 +7,27 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mall-web-item-api" />
+        <module name="mall-service-order-api" />
         <module name="springboot-thymeleaf" />
+        <module name="mall-service-user" />
         <module name="mall-service-search" />
         <module name="mall-service-content-api" />
         <module name="mall-common" />
         <module name="mall-service-goods-api" />
+        <module name="mall-user-oauth" />
         <module name="mall-web-search" />
         <module name="mall-service-canal" />
+        <module name="mall-service-order" />
         <module name="mall-service-content" />
         <module name="mall-service-search-api" />
+        <module name="mall-service-pay" />
         <module name="mall-web-item" />
         <module name="mall-eureka" />
         <module name="mall-service-file" />
         <module name="mall-common-db" />
+        <module name="mall-gateway-web" />
         <module name="mall-service-goods" />
+        <module name="mall-service-user-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -28,6 +35,7 @@
       <module name="mall-common-db" target="1.8" />
       <module name="mall-eureka" target="1.8" />
       <module name="mall-gateway" target="1.8" />
+      <module name="mall-gateway-web" target="8" />
       <module name="mall-parent" target="1.8" />
       <module name="mall-service" target="1.8" />
       <module name="mall-service-api" target="1.8" />
@@ -37,8 +45,14 @@
       <module name="mall-service-file" target="1.8" />
       <module name="mall-service-goods" target="1.8" />
       <module name="mall-service-goods-api" target="1.8" />
+      <module name="mall-service-order" target="8" />
+      <module name="mall-service-order-api" target="8" />
+      <module name="mall-service-pay" target="8" />
       <module name="mall-service-search" target="1.8" />
       <module name="mall-service-search-api" target="1.8" />
+      <module name="mall-service-user" target="8" />
+      <module name="mall-service-user-api" target="8" />
+      <module name="mall-user-oauth" target="1.8" />
       <module name="mall-web" target="1.8" />
       <module name="mall-web-item" target="8" />
       <module name="mall-web-item-api" target="8" />
@@ -51,6 +65,7 @@
       <module name="mall-common" options="-parameters" />
       <module name="mall-common-db" options="-parameters" />
       <module name="mall-eureka" options="-parameters" />
+      <module name="mall-gateway-web" options="-parameters" />
       <module name="mall-service" options="-parameters" />
       <module name="mall-service-canal" options="-parameters" />
       <module name="mall-service-content" options="-parameters" />
@@ -58,8 +73,14 @@
       <module name="mall-service-file" options="-parameters" />
       <module name="mall-service-goods" options="-parameters" />
       <module name="mall-service-goods-api" options="-parameters" />
+      <module name="mall-service-order" options="-parameters" />
+      <module name="mall-service-order-api" options="-parameters" />
+      <module name="mall-service-pay" options="-parameters" />
       <module name="mall-service-search" options="-parameters" />
       <module name="mall-service-search-api" options="-parameters" />
+      <module name="mall-service-user" options="-parameters" />
+      <module name="mall-service-user-api" options="-parameters" />
+      <module name="mall-user-oauth" options="-parameters" />
       <module name="mall-web-item" options="-parameters" />
       <module name="mall-web-item-api" options="-parameters" />
       <module name="mall-web-search" options="-parameters" />

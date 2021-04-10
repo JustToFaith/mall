@@ -18,6 +18,8 @@
         <module>mall-service-content-api</module>
         <module>mall-service-search-api</module>
         <module>mall-web-item-api</module>
+        <module>mall-service-user-api</module>
+        <module>mall-service-order-api</module>
     </modules>
 
     <dependencies>

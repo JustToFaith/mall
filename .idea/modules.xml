@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-common-db/mall-common-db.iml" filepath="$PROJECT_DIR$/mall-parent/mall-common-db/mall-common-db.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-eureka/mall-eureka.iml" filepath="$PROJECT_DIR$/mall-parent/mall-eureka/mall-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-gateway/mall-gateway.iml" filepath="$PROJECT_DIR$/mall-parent/mall-gateway/mall-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-gateway/mall-gateway-web/mall-gateway-web.iml" filepath="$PROJECT_DIR$/mall-parent/mall-gateway/mall-gateway-web/mall-gateway-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-parent.iml" filepath="$PROJECT_DIR$/mall-parent/mall-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-service/mall-service.iml" filepath="$PROJECT_DIR$/mall-parent/mall-service/mall-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-service-api/mall-service-api.iml" filepath="$PROJECT_DIR$/mall-parent/mall-service-api/mall-service-api.iml" />
@@ -16,8 +17,14 @@
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-service/mall-service-file/mall-service-file.iml" filepath="$PROJECT_DIR$/mall-parent/mall-service/mall-service-file/mall-service-file.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-service/mall-service-goods/mall-service-goods.iml" filepath="$PROJECT_DIR$/mall-parent/mall-service/mall-service-goods/mall-service-goods.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-service-api/mall-service-goods-api/mall-service-goods-api.iml" filepath="$PROJECT_DIR$/mall-parent/mall-service-api/mall-service-goods-api/mall-service-goods-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-service/mall-service-order/mall-service-order.iml" filepath="$PROJECT_DIR$/mall-parent/mall-service/mall-service-order/mall-service-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-service-api/mall-service-order-api/mall-service-order-api.iml" filepath="$PROJECT_DIR$/mall-parent/mall-service-api/mall-service-order-api/mall-service-order-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-service/mall-service-pay/mall-service-pay.iml" filepath="$PROJECT_DIR$/mall-parent/mall-service/mall-service-pay/mall-service-pay.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-service/mall-service-search/mall-service-search.iml" filepath="$PROJECT_DIR$/mall-parent/mall-service/mall-service-search/mall-service-search.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-service-api/mall-service-search-api/mall-service-search-api.iml" filepath="$PROJECT_DIR$/mall-parent/mall-service-api/mall-service-search-api/mall-service-search-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-service/mall-service-user/mall-service-user.iml" filepath="$PROJECT_DIR$/mall-parent/mall-service/mall-service-user/mall-service-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-service-api/mall-service-user-api/mall-service-user-api.iml" filepath="$PROJECT_DIR$/mall-parent/mall-service-api/mall-service-user-api/mall-service-user-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-user-oauth/mall-user-oauth.iml" filepath="$PROJECT_DIR$/mall-parent/mall-user-oauth/mall-user-oauth.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-web/mall-web.iml" filepath="$PROJECT_DIR$/mall-parent/mall-web/mall-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-web/mall-web-item/mall-web-item.iml" filepath="$PROJECT_DIR$/mall-parent/mall-web/mall-web-item/mall-web-item.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent/mall-service-api/mall-web-item-api/mall-web-item-api.iml" filepath="$PROJECT_DIR$/mall-parent/mall-service-api/mall-web-item-api/mall-web-item-api.iml" />
