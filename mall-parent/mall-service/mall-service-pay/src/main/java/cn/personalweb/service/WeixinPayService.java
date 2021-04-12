@@ -18,4 +18,11 @@ public interface WeixinPayService {
      * @return
      */
     public Map queryPayStatus(String out_trade_no);
+
+    /***
+     * 关闭支付
+     * @param orderId
+     * @return
+     */
+    Map<String,String> closePay(Long orderId) throws Exception;
 }

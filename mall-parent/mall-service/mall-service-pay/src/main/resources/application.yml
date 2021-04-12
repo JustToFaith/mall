@@ -42,11 +42,25 @@ weixin:
   notifyurl: http://www.itcast.cn/weixin/pay/notify/url
 
 #位置支付交换机和队列
+#mq:
+#  pay:
+#    exchange:
+#      order: exchange.order
+#    queue:
+#      order: queue.order
+#    routing:
+#      key: queue.order
+
+# 位置支付交换机和队列
 mq:
   pay:
     exchange:
       order: exchange.order
     queue:
       order: queue.order
+      seckillorder: queue.seckillorder
+      seckillordertimer: queue.seckillordertimer
+      seckillordertimerdelay: queue.seckillordertimerdelay
     routing:
-      key: queue.order
+      orderkey: queue.order
+      seckillorderkey: queue.seckillorder

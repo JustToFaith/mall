@@ -74,9 +74,13 @@ public class WeixinPayController {
             String result = new String(outSteam.toByteArray(), "utf-8");
             //将xml字符串转换成Map结构
             Map<String, String> map = WXPayUtil.xmlToMap(result);
+            // 获取attach附加数据，此数据是在支付发送给微信支付服务器的，它完整的返回回来
+            String attach = map.get("attach");
+            // 转换成map
+            Map<String,String> parameters = JSON.parseObject(attach, Map.class);
 
             // 消息发给mq
-            rabbitTemplate.convertAndSend("exchange.order", "queue.order", JSON.toJSONString(map));
+            rabbitTemplate.convertAndSend(parameters.get("exchange"), parameters.get("routingkey"), JSON.toJSONString(map));
             //响应数据设置
             Map respMap = new HashMap();
             respMap.put("return_code","SUCCESS");

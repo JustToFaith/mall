@@ -20,6 +20,7 @@
         <module>mall-web-item-api</module>
         <module>mall-service-user-api</module>
         <module>mall-service-order-api</module>
+        <module>mall-service-seckill-api</module>
     </modules>
 
     <dependencies>

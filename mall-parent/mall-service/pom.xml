@@ -23,6 +23,7 @@
         <module>mall-service-user</module>
         <module>mall-service-order</module>
         <module>mall-service-pay</module>
+        <module>mall-service-seckill</module>
     </modules>
 
     <!--依赖-->

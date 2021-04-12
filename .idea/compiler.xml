@@ -10,10 +10,12 @@
         <module name="mall-service-order-api" />
         <module name="springboot-thymeleaf" />
         <module name="mall-service-user" />
+        <module name="mall-service-seckill-api" />
         <module name="mall-service-search" />
         <module name="mall-service-content-api" />
         <module name="mall-common" />
         <module name="mall-service-goods-api" />
+        <module name="mall-service-seckill" />
         <module name="mall-user-oauth" />
         <module name="mall-web-search" />
         <module name="mall-service-canal" />
@@ -50,6 +52,8 @@
       <module name="mall-service-pay" target="8" />
       <module name="mall-service-search" target="1.8" />
       <module name="mall-service-search-api" target="1.8" />
+      <module name="mall-service-seckill" target="8" />
+      <module name="mall-service-seckill-api" target="8" />
       <module name="mall-service-user" target="8" />
       <module name="mall-service-user-api" target="8" />
       <module name="mall-user-oauth" target="1.8" />
@@ -78,6 +82,8 @@
       <module name="mall-service-pay" options="-parameters" />
       <module name="mall-service-search" options="-parameters" />
       <module name="mall-service-search-api" options="-parameters" />
+      <module name="mall-service-seckill" options="-parameters" />
+      <module name="mall-service-seckill-api" options="-parameters" />
       <module name="mall-service-user" options="-parameters" />
       <module name="mall-service-user-api" options="-parameters" />
       <module name="mall-user-oauth" options="-parameters" />
