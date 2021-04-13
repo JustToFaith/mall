@@ -10,11 +10,13 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.Serializable;
 
-/****
- * @Author:admin
- * @Description:Spu构建
- * @Date 2019/6/14 19:13
- *****/
+/**
+ * PU = Standard Product Unit  （标准产品单位）
+ * 概念 : SPU 是商品信息聚合的最小单位，是一组可复用、易检索的标准化信息的集合，该集合描述了一个产品的特性。
+ * 通俗点讲，属性值、特性相同的货品就可以称为一个 SPU
+ *
+ * SPU：某一款商品的公共属性，比如iphone11就是spu，iphone11黑色，64GB等更详细部分为sku
+ */
 @ApiModel(description = "Spu",value = "Spu")
 @Table(name="tb_spu")
 public class Spu implements Serializable{

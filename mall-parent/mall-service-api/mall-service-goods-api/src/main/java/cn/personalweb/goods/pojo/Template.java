@@ -6,11 +6,9 @@ import io.swagger.annotations.ApiModelProperty;
 import javax.persistence.*;
 import java.io.Serializable;
 
-/****
- * @Author:admin
- * @Description:Template构建
- * @Date 2019/6/14 19:13
- *****/
+/**
+ * 模板类,是描述商品信息的,模板与规格是一对多关系 ，模板与参数是一对多关系
+ */
 @ApiModel(description = "Template",value = "Template")
 @Table(name="tb_template")
 public class Template implements Serializable{

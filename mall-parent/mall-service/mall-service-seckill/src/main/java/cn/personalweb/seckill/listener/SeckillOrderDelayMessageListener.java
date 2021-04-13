@@ -1,10 +1,14 @@
 package cn.personalweb.seckill.listener;
 
+import cn.personalweb.seckill.dao.SeckillGoodsMapper;
+import cn.personalweb.seckill.dao.SeckillOrderMapper;
+import cn.personalweb.seckill.pojo.SeckillGoods;
 import cn.personalweb.seckill.pojo.SeckillOrder;
 import cn.personalweb.seckill.pojo.SeckillStatus;
 import cn.personalweb.seckill.service.SeckillOrderService;
 import com.alibaba.fastjson.JSON;
 import entry.Result;
+import entry.SystemConstants;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +16,8 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Component;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Map;
 
 /**
@@ -25,10 +31,13 @@ public class SeckillOrderDelayMessageListener {
     private RedisTemplate redisTemplate;
 
     @Autowired
-    private SeckillOrderService seckillOrderService;
+    private SeckillOrderMapper seckillOrderMapper;
+
+
 
     @Autowired
-    private WeixinPayFeign weixinPayFeign;
+    private SeckillGoodsMapper seckillGoodsMapper;
+
 
     /***
      * 读取消息
@@ -37,25 +46,83 @@ public class SeckillOrderDelayMessageListener {
      * @param message
      */
     @RabbitHandler
-    public void consumeMessage(@Payload String message){
-        //读取消息
-        SeckillStatus seckillStatus = JSON.parseObject(message,SeckillStatus.class);
+    public void consumer(String message) throws Exception{
+        System.out.println("消费端接收数据======="+ new Date());
 
-        //获取Redis中订单信息
-        String username = seckillStatus.getUsername();
-        SeckillOrder seckillOrder = (SeckillOrder) redisTemplate.boundHashOps("SeckillOrder").get(username);
 
-        //如果Redis中有订单信息，说明用户未支付
-        if(seckillOrder!=null){
-            System.out.println("准备回滚---"+seckillStatus);
-            //关闭支付
-            Result closeResult = weixinPayFeign.closePay(seckillStatus.getOrderId());
-            Map<String,String> closeMap = (Map<String, String>) closeResult.getData();
+        //1.获取数据 json格式的字符串
+        Map<String,String> allMap = JSON.parseObject(message, Map.class);
+        System.out.println(allMap);
+        //2.转成MAP
 
-            if(closeMap!=null && closeMap.get("return_code").equalsIgnoreCase("success") &&
-                    closeMap.get("result_code").equalsIgnoreCase("success") ){
-                //关闭订单
-                seckillOrderService.closeOrder(username);
+        //3.判断 是否成功(通信是否成)
+        if(allMap!=null) {
+            String return_code = allMap.get("return_code");
+            if("SUCCESS".equalsIgnoreCase(return_code)) {
+                String result_code = allMap.get("result_code");
+                String attach = allMap.get("attach");//json格式的字符串 (里面有用户名信息)
+                Map<String,String> attachMap = JSON.parseObject(attach, Map.class);
+                String username = attachMap.get("username");
+
+
+                //获取seckillstatus 状态信息
+                SeckillStatus seckillStatus= (SeckillStatus) redisTemplate.boundHashOps(SystemConstants.SEC_KILL_USER_STATUS_KEY).get(username);
+
+
+                if("SUCCESS".equalsIgnoreCase(result_code)) {
+                    //4.判断业务状态是否成功  如果 成功  1.删除预订单 2.同步到数据库 3.删除排队标识 4.删除状态信息
+                    //4.1 根据用户名redis中获取订单的数据
+                    SeckillOrder  seckillOrder = (SeckillOrder) redisTemplate.boundHashOps(SystemConstants.SEC_KILL_ORDER_KEY).get(username);
+                    //4.2 删除预订单
+                    redisTemplate.boundHashOps(SystemConstants.SEC_KILL_ORDER_KEY).delete(username);
+                    //4.3 同步到数据库中
+                    seckillOrder.setStatus("1");//已经支付
+                    SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
+                    Date paytime = simpleDateFormat.parse(allMap.get("time_end"));
+                    seckillOrder.setPayTime(paytime);
+                    seckillOrder.setTransactionId(allMap.get("transaction_id"));
+
+                    seckillOrderMapper.insertSelective(seckillOrder);
+
+                    //4.4 删除 防止重复排队的标识
+                    redisTemplate.boundHashOps(SystemConstants.SEC_KILL_QUEUE_REPEAT_KEY).delete(username);
+                    //4.5 删除 排队标识
+                    redisTemplate.boundHashOps(SystemConstants.SEC_KILL_USER_STATUS_KEY).delete(username);
+
+                }else{
+                    //关闭微信订单  判断微信关闭订单的状态(1,已支付:调用方法 更新数据到数据库中.2 调用成功:(关闭订单成功:执行删除订单的业务 ) 3.系统错误: 人工处理.   )
+
+                    //5.判断业务状态是否成功  如果 不成功 1.删除预订单 2.恢复库存 3.删除排队标识 4.删除状态信息
+                    SeckillOrder  seckillOrder = (SeckillOrder) redisTemplate.boundHashOps(SystemConstants.SEC_KILL_ORDER_KEY).get(username);
+
+                    redisTemplate.boundHashOps(SystemConstants.SEC_KILL_ORDER_KEY).delete(username);
+
+
+                    // 2.恢复库存  压入商品的超卖的问题的队列中
+                    redisTemplate.boundListOps(SystemConstants.SEC_KILL_CHAOMAI_LIST_KEY_PREFIX + seckillOrder.getSeckillId()).leftPush(seckillOrder.getSeckillId());
+
+
+                    //2.恢复库存  获取商品的数据 商品的库存+1
+
+                    SeckillGoods  seckillGoods = (SeckillGoods) redisTemplate.boundHashOps(SystemConstants.SEC_KILL_GOODS_PREFIX + seckillStatus.getTime()).get(seckillOrder.getSeckillId());
+                    if(seckillGoods==null){//说明你买的是最后一个商品 在redis中被删除掉了
+                        seckillGoods=seckillGoodsMapper.selectByPrimaryKey(seckillOrder.getSeckillId());
+                    }
+
+
+                    Long increment = redisTemplate.boundHashOps(SystemConstants.SECK_KILL_GOODS_COUNT_KEY).increment(seckillOrder.getSeckillId(), 1);
+
+                    seckillGoods.setStockCount(increment.intValue());
+
+                    //3 删除 防止重复排队的标识
+                    redisTemplate.boundHashOps(SystemConstants.SEC_KILL_QUEUE_REPEAT_KEY).delete(username);
+                    //4 删除 排队标识
+                    redisTemplate.boundHashOps(SystemConstants.SEC_KILL_USER_STATUS_KEY).delete(username);
+
+
+
+
+                }
             }
         }
     }

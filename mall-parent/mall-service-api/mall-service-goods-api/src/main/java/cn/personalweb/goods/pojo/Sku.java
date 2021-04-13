@@ -11,11 +11,15 @@ import javax.persistence.Table;
 import java.io.Serializable;
 import java.util.Date;
 
-/****
- * @Author:admin
- * @Description:Sku构建
- * @Date 2019/6/14 19:13
- *****/
+/**
+ * SKU=stock keeping unit( 库存量单位)
+ * SKU 即库存进出计量的单位， 可以是以件、盒、托盘等为单位。
+ * SKU 是物理上不可分割的最小存货单元。在使用时要根据不同业态，不同管理模式来处理。
+ * 在服装、鞋类商品中使用最多最普遍。
+ * 例如：**华为P30 红色 64G 就是一个 SKU**
+ *
+ * SKU:某款商品的不同参数对应的商品信息[某个商品]
+ */
 @ApiModel(description = "Sku",value = "Sku")
 @Table(name="tb_sku")
 public class Sku implements Serializable{

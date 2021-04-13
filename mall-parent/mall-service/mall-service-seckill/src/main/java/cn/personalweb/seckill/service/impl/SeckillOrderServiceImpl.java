@@ -90,10 +90,8 @@ public class SeckillOrderServiceImpl implements SeckillOrderService {
 
         //清空Redis缓存
         redisTemplate.boundHashOps("SeckillOrder").delete(username);
-
         //清空用户排队数据
         redisTemplate.boundHashOps("UserQueueCount").delete(username);
-
         //删除抢购状态信息
         redisTemplate.boundHashOps("UserQueueStatus").delete(username);
     }
@@ -108,7 +106,6 @@ public class SeckillOrderServiceImpl implements SeckillOrderService {
         SeckillStatus seckillStatus = (SeckillStatus) redisTemplate.boundHashOps("UserQueueStatus").get(username);
         //获取Redis中订单信息
         SeckillOrder seckillOrder = (SeckillOrder) redisTemplate.boundHashOps("SeckillOrder").get(username);
-
         //如果Redis中有订单信息，说明用户未支付
         if(seckillStatus!=null && seckillOrder!=null){
             //删除订单

@@ -8,11 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.Serializable;
 
-/****
- * @Author:admin
- * @Description:CategoryBrand构建
- * @Date 2019/6/14 19:13
- *****/
+
 @ApiModel(description = "CategoryBrand",value = "CategoryBrand")
 @Table(name="tb_category_brand")
 public class CategoryBrand implements Serializable{

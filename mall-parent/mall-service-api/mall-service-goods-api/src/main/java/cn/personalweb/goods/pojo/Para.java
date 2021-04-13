@@ -6,11 +6,9 @@ import io.swagger.annotations.ApiModelProperty;
 import javax.persistence.*;
 import java.io.Serializable;
 
-/****
- * @Author:admin
- * @Description:参数管理，参数是例如系统：安卓（Android）后置摄像头像素：2000万及以上  热点：快速充电等信息 。
- * @Date 2019/6/14 19:13
- *****/
+/**
+ * 参数管理，参数是例如系统：安卓（Android）后置摄像头像素：2000万及以上  热点：快速充电等信息 。
+ */
 @ApiModel(description = "Para",value = "Para")
 @Table(name="tb_para")
 public class Para implements Serializable{

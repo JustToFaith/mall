@@ -3,7 +3,7 @@ package cn.personalweb.file;
 import java.util.Arrays;
 
 /**
- * 封住文件上传信息：
+ * 封装文件上传信息：
  * 时间
  * 作者
  * 类型

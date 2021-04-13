@@ -6,11 +6,9 @@ import io.swagger.annotations.ApiModelProperty;
 import javax.persistence.*;
 import java.io.Serializable;
 
-/****
- * @Author:admin
- * @Description:Brand品牌类
- * @Date 2019/6/14 19:13
- *****/
+/**
+ * 商品牌子
+ */
 @ApiModel(description = "Brand",value = "Brand")
 @Table(name="tb_brand")
 public class Brand implements Serializable{

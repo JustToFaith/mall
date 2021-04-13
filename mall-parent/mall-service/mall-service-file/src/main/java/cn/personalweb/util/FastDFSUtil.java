@@ -12,11 +12,11 @@ import java.io.InputStream;
 /**
  * 实现FastDFS文件管理
  *  文件上传
- *  文件删除
- *  文件下载
- *  文件信息获取
- *  Storage信息获取
- *  Tracker信息获取
+ *  *  文件删除
+ *  *  文件下载
+ *  *  文件信息获取
+ *  *  Storage信息获取
+ *  *  Tracker信息获取
  */
 public class FastDFSUtil {
 

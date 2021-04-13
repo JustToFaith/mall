@@ -4,7 +4,9 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
-
+/**
+ * unlog表用于seata实现分布式事务管理
+ */
 @Table(name="undo_log")
 public class UndoLog implements Serializable{
 
